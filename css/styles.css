@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.bodyPadreGrid {
+    display: grid;
+    background-color: aquamarine;
+    grid-template-areas: 
+    "header" "header" "header"
+    "botonera" "botonera" "botonera"
+    "main" "main" "main"
+    "imagenPortada" "imagenPortada" "imagenPortada"
+    "footer" "footer" "footer" ;
+
+    
+
+
+}
+
+.header {
+    
+    text-align: center;
+    font-family: cursive;
+    font-weight: lighter;
+    font-size: 30pt;    
+    font-style: italic;
+    
+    background-color: white; 
+    margin: top;
+    grid-area: header;
+    
+}
+
+
+.item2 {
+    text-align: center;    
+    font-family: cursive;
+    font-weight: lighter;
+    font-size: 15pt;
+    font-style: italic;
+    
+    background-color: white;
+    padding: 10pt;
+    
+    }
+
+    
+.item3 {
+    
+    background-color: white;
+    padding: 2pt;
+    
+
+}
+
+.main {
+    grid-area: main;
+    
+}
+
+.section {
+    grid-area: imagen portada;
+    
+}
+
+#botonera {
+    grid-area: botonera
+    ;
+
+    
+    
+}
+
+footer {
+    
+    background-color: white;
+    border: 2pt black double;
+    
+    
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* maquillaje social */
+
+.grid-container {
+    display: grid;
+    background-color: aquamarine;
+    grid-template-areas: "header" "header" "header"
+    "botonera" "botonera" "botonera"
+    "main" "main" "main"
+    "imagenPortada2" "imagenPortada2" "imagenPortada2"
+    "insta" "insta" "insta"
+    "footer" "footer" "footer"
+    ;
+
+
+}
+
+#imagenPortada2 {
+    background-color: white;
+    
+}
+
+.itemAM {
+    text-align: center;
+    ;
+}
+
+.clasicos {
+    word-spacing: 50pt;
+    
+    
+}
+
+.esfumados  {
+    word-spacing: 50pt;
+    
+    
+}
+
+.cutCrease  {
+    word-spacing: 50pt;
+    
+    
+}
+
+.smokeyEyes  {
+    word-spacing: 50pt;
+    
+    
+}
+
+.artisticos  {
+    word-spacing: 50pt;
+    
+    
+}
+
+.novia  {
+    word-spacing: 50pt;
+    
+    
+}
+.subtitle {
+    padding: 10pt;
+    font-family: cursive;
+}
+
+
+#insta {
+    text-align: center;
+    
+    background-color: white;
+    padding: 10pt;
+}
+
+.insta {
+    text-align: center;
+}
+
+/* automaquillaje */
+
+#automaquillaje {
+    background-color: white;
+    
+    padding: 2pt
+}
+
+/* Sobre Mi */
+
+.grid-contenedor {
+    display: grid;
+    background-color: white;
+    grid-template-areas: "header" "header"
+    "navegador" "navegador" 
+    "presentacion" "presentacion" 
+    "presentacion" "presentacion" 
+    "footer" "footer" "footer" ;
+}
+
+.presentacion {
+    
+    text-align: center;
+    font-size: 15pt;
+    font-family: cursive;
+    margin: 10pt;
+    
+}
+
+.retrato {
+    text-align: center;
+
+}
+
+#botonera1 {
+    font-size: 10pt;
+    font-family: cursive;
+    margin: 10pt;
+}
+
+.item4 {
+    font-size: 15pt;
+    text-align: center;
+    }
+
+
+@media only screen and (max-width: 400px) {
+    #bodyPadreGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows:  10% 10% 70% 10%
+    } 
+    
+    #grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows:  10% 10% 70% 10%
+    }
+
+    #grid-contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows:  10% 10% 70% 10%
+
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    #bodyPadreGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows:  10% 10% 70% 10%
+    }
+
+    #grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows:  10% 10% 70% 10%
+    }
+
+    #grid-contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows:  10% 10% 70% 10%
+    }
+
+    
+}
+
+@media screen and (min-width: 1024px) {
+    #bodyPadreGrid {
+        grid-template-columns: 3fr;
+        grid-template-rows: 10% 10% 70% 10%;
+    }
+
+    #grid-container {
+        grid-template-columns: 3fr;
+        grid-template-rows: 10% 10% 70% 10%;
+    }
+    
+    #grid-contenedor {
+        grid-template-columns: 2fr;
+        grid-template-rows: 10% 10% 70% 10%;
+    }
+}
